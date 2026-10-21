@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="96-gCq8vWI3ZaiocfWlm">
-    <mxGraphModel dx="2940" dy="797" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2381" dy="963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -180,46 +180,6 @@
         <mxCell id="YiV-uGFiTpBlukbpkKc7-57" edge="1" parent="1" source="YiV-uGFiTpBlukbpkKc7-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=gap;" target="YiV-uGFiTpBlukbpkKc7-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wnJ1_H-Lc3IslCHYuYQT-12" connectable="0" parent="1" style="group;fillColor=#fff2cc;strokeColor=#d6b656;" value="" vertex="1">
-          <mxGeometry height="110" width="360" x="460" y="1059" as="geometry" />
-        </mxCell>
-        <mxCell id="wnJ1_H-Lc3IslCHYuYQT-13" parent="wnJ1_H-Lc3IslCHYuYQT-12" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;verticalAlign=bottom;fillColor=#FFF2CC;" value="车道线自蒸馏模型" vertex="1">
-          <mxGeometry height="110" width="360" as="geometry" />
-        </mxCell>
-        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;---\ntitle: 车道线自蒸馏流程 —— 核心：模型用自己的软标签教自己，无需外部教师\n---\nflowchart LR\n    A[\&quot;1️⃣ 模型预训练&lt;br/&gt;在车道线数据集上训练基础模型\&quot;]\n    B[\&quot;2️⃣ 软标签生成&lt;br/&gt;模型对自身输出生成软标签&lt;br/&gt;（特征图 + 注意力分布 + 预测概率）\&quot;]\n    C[\&quot;3️⃣ 自蒸馏训练&lt;br/&gt;（特征图 MSE + 软标签 KL 散度）\&quot;]\n    D[\&quot;4️⃣ 迭代自蒸馏&lt;br/&gt;重复生成软标签 → 蒸馏训练&lt;br/&gt;持续提升精度\&quot;]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n\n    style A fill:#1a2b4a,color:#ffffff\n    style B fill:#1a2b4a,color:#ffffff\n    style C fill:#1a2b4a,color:#ffffff\n    style D fill:#1a2b4a,color:#ffffff&quot;,&#xa;  &quot;config&quot;: null,&#xa;  &quot;version&quot;: &quot;12&quot;&#xa;}" id="wnJ1_H-Lc3IslCHYuYQT-14">
-          <mxCell connectable="0" parent="wnJ1_H-Lc3IslCHYuYQT-12" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
-            <mxGeometry as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="wnJ1_H-Lc3IslCHYuYQT-15" edge="1" parent="wnJ1_H-Lc3IslCHYuYQT-14" source="wnJ1_H-Lc3IslCHYuYQT-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;" target="wnJ1_H-Lc3IslCHYuYQT-18">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <UserObject label="模型预训练" mermaidId="n:A" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#1a2b4a;strokeColor=#28253D;fontColor=#ffffff;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="1️⃣ 模型预训练&#xa;在车道线数据集上训练基础模型" id="wnJ1_H-Lc3IslCHYuYQT-16">
-          <mxCell parent="wnJ1_H-Lc3IslCHYuYQT-14" style="html=1;whiteSpace=wrap;fillColor=#FFD966;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=12;labelWidth=120;rounded=1;roundedPerimeter=1;align=center;verticalAlign=middle;" vertex="1">
-            <mxGeometry height="60" width="70" x="10" y="23" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="wnJ1_H-Lc3IslCHYuYQT-17" edge="1" parent="wnJ1_H-Lc3IslCHYuYQT-14" source="wnJ1_H-Lc3IslCHYuYQT-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;" target="wnJ1_H-Lc3IslCHYuYQT-20">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <UserObject label="软标签生成" mermaidId="n:B" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#1a2b4a;strokeColor=#28253D;fontColor=#ffffff;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="2️⃣ 软标签生成&#xa;模型对自身输出生成软标签&#xa;（特征图 + 注意力分布 + 预测概率）" id="wnJ1_H-Lc3IslCHYuYQT-18">
-          <mxCell parent="wnJ1_H-Lc3IslCHYuYQT-14" style="html=1;whiteSpace=wrap;fillColor=#FFD966;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=12;labelWidth=120;rounded=1;roundedPerimeter=1;align=center;verticalAlign=middle;" vertex="1">
-            <mxGeometry height="60" width="70" x="100" y="23" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="wnJ1_H-Lc3IslCHYuYQT-19" edge="1" parent="wnJ1_H-Lc3IslCHYuYQT-14" source="wnJ1_H-Lc3IslCHYuYQT-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;" target="wnJ1_H-Lc3IslCHYuYQT-21">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <UserObject label="自蒸馏训练" mermaidId="n:C" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#1a2b4a;strokeColor=#28253D;fontColor=#ffffff;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="3️⃣ 自蒸馏训练&#xa;（特征图 MSE + 软标签 KL 散度）" id="wnJ1_H-Lc3IslCHYuYQT-20">
-          <mxCell parent="wnJ1_H-Lc3IslCHYuYQT-14" style="html=1;whiteSpace=wrap;fillColor=#FFD966;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=12;labelWidth=120;rounded=1;roundedPerimeter=1;align=center;verticalAlign=middle;" vertex="1">
-            <mxGeometry height="60" width="70" x="190" y="23" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="迭代自蒸馏" mermaidId="n:D" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#1a2b4a;strokeColor=#28253D;fontColor=#ffffff;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="4️⃣ 迭代自蒸馏&#xa;重复生成软标签 → 蒸馏训练&#xa;持续提升精度" id="wnJ1_H-Lc3IslCHYuYQT-21">
-          <mxCell parent="wnJ1_H-Lc3IslCHYuYQT-14" style="html=1;whiteSpace=wrap;fillColor=#FFD966;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=12;labelWidth=120;rounded=1;roundedPerimeter=1;align=center;verticalAlign=middle;" vertex="1">
-            <mxGeometry height="60" width="70" x="280" y="23" as="geometry" />
-          </mxCell>
-        </UserObject>
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-35" connectable="0" parent="1" style="group;fillColor=#fff2cc;strokeColor=#d6b656;rounded=1;roundedPerimeter=1;" value="" vertex="1">
           <mxGeometry height="110" width="360" x="150" y="913" as="geometry" />
         </mxCell>
@@ -358,44 +318,35 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-95" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="人工&lt;div&gt;3D 车道线&lt;/div&gt;&lt;div&gt;标注&lt;/div&gt;" vertex="1">
-          <mxGeometry height="68" width="60" x="-560" y="666" as="geometry" />
+          <mxGeometry height="68" width="60" x="-290" y="631" as="geometry" />
         </mxCell>
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-97" edge="1" parent="1" source="wnJ1_H-Lc3IslCHYuYQT-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=gap;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-950" y="598" as="targetPoint" />
+            <mxPoint x="-680" y="563" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-98" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;图像数据" vertex="1">
-          <mxGeometry height="60" width="60" x="-1030" y="568" as="geometry" />
+          <mxGeometry height="60" width="60" x="-760" y="533" as="geometry" />
         </mxCell>
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-135" edge="1" parent="1" source="wnJ1_H-Lc3IslCHYuYQT-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=gap;" target="wnJ1_H-Lc3IslCHYuYQT-125">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-480" y="600" />
-              <mxPoint x="-480" y="700" />
+              <mxPoint x="-210" y="565" />
+              <mxPoint x="-210" y="665" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-100" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="2D&lt;div&gt;车道线&lt;/div&gt;&lt;div&gt;掩膜&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="60" x="-560" y="570" as="geometry" />
+          <mxGeometry height="60" width="60" x="-290" y="535" as="geometry" />
         </mxCell>
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-102" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="外参结果" vertex="1">
-          <mxGeometry height="68" width="60" x="-365" y="568" as="geometry" />
-        </mxCell>
-        <mxCell id="wnJ1_H-Lc3IslCHYuYQT-106" edge="1" parent="1" source="wnJ1_H-Lc3IslCHYuYQT-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;" target="wnJ1_H-Lc3IslCHYuYQT-109">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="wnJ1_H-Lc3IslCHYuYQT-107" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="投影&lt;div&gt;特征提取&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="70" x="-910" y="980" as="geometry" />
-        </mxCell>
-        <mxCell id="wnJ1_H-Lc3IslCHYuYQT-109" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="梯度提升&lt;div&gt;决策树&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="70" x="-820" y="980" as="geometry" />
+          <mxGeometry height="68" width="60" x="-95" y="533" as="geometry" />
         </mxCell>
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-110" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="外参自动&lt;div&gt;标定工具&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="70" x="-370" y="670" as="geometry" />
+          <mxGeometry height="60" width="70" x="-100" y="635" as="geometry" />
         </mxCell>
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-112" connectable="0" parent="1" style="group;fillColor=#fff2cc;strokeColor=#d6b656;rounded=1;roundedPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="110" width="360" x="-950" y="545" as="geometry" />
+          <mxGeometry height="110" width="360" x="-680" y="510" as="geometry" />
         </mxCell>
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-113" parent="wnJ1_H-Lc3IslCHYuYQT-112" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;verticalAlign=bottom;fillColor=#FFF2CC;" value="车道线自蒸馏模型" vertex="1">
           <mxGeometry height="110" width="360" as="geometry" />
@@ -437,25 +388,25 @@
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-140" edge="1" parent="1" source="wnJ1_H-Lc3IslCHYuYQT-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;" target="wnJ1_H-Lc3IslCHYuYQT-125">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-630" y="760" />
-              <mxPoint x="-480" y="760" />
-              <mxPoint x="-480" y="700" />
+              <mxPoint x="-360" y="725" />
+              <mxPoint x="-210" y="725" />
+              <mxPoint x="-210" y="665" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-124" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="人工&lt;div&gt;标定外参&lt;/div&gt;" vertex="1">
-          <mxGeometry height="68" width="60" x="-660" y="666" as="geometry" />
+          <mxGeometry height="68" width="60" x="-390" y="631" as="geometry" />
         </mxCell>
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-143" edge="1" parent="1" source="wnJ1_H-Lc3IslCHYuYQT-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;" target="wnJ1_H-Lc3IslCHYuYQT-110">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-430" y="760" />
-              <mxPoint x="-335" y="760" />
+              <mxPoint x="-160" y="725" />
+              <mxPoint x="-65" y="725" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-125" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="外参质检" vertex="1">
-          <mxGeometry height="60" width="70" x="-460" y="670" as="geometry" />
+          <mxGeometry height="60" width="70" x="-190" y="635" as="geometry" />
         </mxCell>
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-132" edge="1" parent="1" source="wnJ1_H-Lc3IslCHYuYQT-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=gap;" target="wnJ1_H-Lc3IslCHYuYQT-100">
           <mxGeometry relative="1" as="geometry" />
@@ -463,7 +414,7 @@
         <mxCell id="wnJ1_H-Lc3IslCHYuYQT-141" edge="1" parent="1" source="wnJ1_H-Lc3IslCHYuYQT-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=gap;" target="wnJ1_H-Lc3IslCHYuYQT-102">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-430" y="602" />
+              <mxPoint x="-160" y="567" />
             </Array>
           </mxGeometry>
         </mxCell>
